@@ -9,9 +9,9 @@ const root = new Vue({
     img: 'img-gs',
   },
 
-  mounted(){
-    setInterval(this.upArrow, 3000)
-  },
+  // mounted(){
+  //   setInterval(this.upArrow, 3000)
+  // },
 
   methods: {
     

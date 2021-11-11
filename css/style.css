@@ -6,8 +6,9 @@
 
 .container {
   height: 597px;
+  width: 1000px;
   padding-top: 80px;
-  overflow-y: hidden;
+  object-fit: contain !important;
 }
 
 .out-box-slide {
