@@ -18,7 +18,7 @@
     <div class="container">
 
       <div class="out-box-slide">
-        <img :src="imge[counter]" alt="">
+        <img :src="image[counter]" alt="">
       </div>  
       
       <div class="right-slide">
@@ -27,7 +27,7 @@
         <div class="up-chevron" @click="upArrow">
           <i class="fas fa-chevron-up"></i>
         </div>
-        <div class="down-chevron">
+        <div class="down-chevron" @click="downArrow">
           <i class="fas fa-chevron-down"></i>
         </div>
       </div>
@@ -37,7 +37,7 @@
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
-  <script src="js/script.js"></script>
+  <script src="/js/script.js"></script>
 </body>
 
 </html>

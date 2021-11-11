@@ -11,7 +11,17 @@ const root = new Vue({
     
     upArrow(){
       this.counter++;
-      
+      if(this.counter > this.image.length -1){
+        this.counter = 0;
+      }
+    },
+
+    downArrow(){
+      this.counter--;
+      if(this.counter < this.image.length -1){
+        this.counter = this.image.length -1;
+      }
+
     }
 
   },
