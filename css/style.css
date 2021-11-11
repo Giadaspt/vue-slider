@@ -6,9 +6,8 @@
 
 .container {
   height: 597px;
-  width: 1000px;
+  width: 800px;
   padding-top: 80px;
-  object-fit: contain !important;
 }
 
 .out-box-slide {
@@ -32,8 +31,9 @@
   width: 100%;
 }
 
-.img-gs:hover{
+.img-gs1.active{
   opacity: 1;
+  border: 2px solid white;
 }
 
 .right-slide-inner {

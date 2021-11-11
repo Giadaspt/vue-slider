@@ -17,28 +17,31 @@
   <div id="root">
     <div class="container d-flex justify-content-center align-content-center align-items-center">
 
+          <div class="out-box-slide">
+            <img :src="images[counter]" alt="">
+          </div>  
+          
+          <div class="right-slide">
+            <div v-for="(image, index) in images">
+              <img class="img-gs1" :src="image" :class="{active: index == counter}">
+            </div>
 
-      <div class="out-box-slide">
-        <img :src="images[counter]" alt="">
-      </div>  
-      
-      <div class="right-slide">
-        <div v-for="image in images2">
-          <img class="img-gs1" :src="image" >
-        </div>
-        
-        <div>
-          <div class="up-chevron" @click="upArrow">
-            <i class="fas fa-chevron-up"></i>
+            
+            <div>
+              <div class="up-chevron" @click="upArrow">
+                <i class="fas fa-chevron-up"></i>
+              </div>
+              <div class="down-chevron" @click="downArrow">
+                <i class="fas fa-chevron-down"></i>
+              </div>
+            </div>
           </div>
-          <div class="down-chevron" @click="downArrow">
-            <i class="fas fa-chevron-down"></i>
-          </div>
-        </div>
-      </div>
-      
-    </div> 
-  </div>
+          
+        </div> 
+
+
+    </div>
+
 
 
 <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>

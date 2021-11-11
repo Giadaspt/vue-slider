@@ -4,9 +4,9 @@ const root = new Vue({
 
   data: {
     images: ['img/01.jpg', 'img/02.jpg', 'img/03.jpg', 'img/04.jpg', 'img/05.jpg'],
-    images2: ['img/01.jpg', 'img/02.jpg', 'img/03.jpg', 'img/04.jpg', 'img/05.jpg'],
     counter: 0,
     img: 'img-gs',
+    
   },
 
   // mounted(){
