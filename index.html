@@ -15,20 +15,25 @@
 
 <body>
   <div id="root">
-    <div class="container">
+    <div class="container d-flex justify-content-center align-content-center align-items-center">
 
+      
       <div class="out-box-slide">
-        <img :src="image[counter]" alt="">
+        <img :src="images[counter]" alt="">
       </div>  
       
       <div class="right-slide">
-        <img :src="image[counter]" alt="">
-
-        <div class="up-chevron" @click="upArrow">
-          <i class="fas fa-chevron-up"></i>
+        <div v-for="image in images2">
+          <img class="img-gs1" :src="image" >
         </div>
-        <div class="down-chevron" @click="downArrow">
-          <i class="fas fa-chevron-down"></i>
+        
+        <div>
+          <div class="up-chevron" :class="{img}" @click="upArrow">
+            <i class="fas fa-chevron-up"></i>
+          </div>
+          <div class="down-chevron" :class="{img}" @click="downArrow">
+            <i class="fas fa-chevron-down"></i>
+          </div>
         </div>
       </div>
       
